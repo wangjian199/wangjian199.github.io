@@ -1,0 +1,26 @@
+@import 'iconfont/iconfont.css';
+@import 'highlight/highlight.css';
+/* desktop */
+@media screen and (min-width: 801px) {
+    @import 'desktop/_about.scss';
+    @import 'desktop/_article.scss';
+    @import 'desktop/_backtop.scss';
+    @import 'desktop/_cate.scss';
+    @import 'desktop/_footer.scss';
+    @import 'desktop/_index-card.scss';
+    @import 'desktop/_layout.scss';
+    @import 'desktop/_navbar.scss';
+    @import 'desktop/_tags.scss';
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+    @import 'mobile/_layout.scss';
+    @import 'mobile/_index-card.scss';
+    @import 'mobile/_article.scss';
+    @import 'mobile/_footer.scss';
+    @import 'mobile/_navbar.scss';
+    @import 'mobile/_backtop.scss';
+    @import 'mobile/_cate.scss';
+    @import 'mobile/_tags.scss';
+    @import 'mobile/_about.scss';
+}
