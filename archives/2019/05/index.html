@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SpringMVC | King的私人博客</title>
+  <title>Archives: 2019/5 | King的私人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简述SpringMVC的流程1.用户发送请求至前端控制器DispatcherServlet；2.DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handle；3.处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；4.DispatcherServlet 调用 Han">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SpringMVC">
-<meta property="og:url" content="http://yoursite.com/2019/01/05/我的第一篇博客/index.html">
+  <meta name="description" content="学海无涯苦作舟">
+<meta property="og:type" content="website">
+<meta property="og:title" content="King的私人博客">
+<meta property="og:url" content="http://yoursite.com/archives/2019/05/index.html">
 <meta property="og:site_name" content="King的私人博客">
-<meta property="og:description" content="简述SpringMVC的流程1.用户发送请求至前端控制器DispatcherServlet；2.DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handle；3.处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；4.DispatcherServlet 调用 Han">
+<meta property="og:description" content="学海无涯苦作舟">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2019-08-21T01:38:16.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SpringMVC">
-<meta name="twitter:description" content="简述SpringMVC的流程1.用户发送请求至前端控制器DispatcherServlet；2.DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handle；3.处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；4.DispatcherServlet 调用 Han">
+<meta name="twitter:title" content="King的私人博客">
+<meta name="twitter:description" content="学海无涯苦作舟">
   
     <link rel="alternative" href="/atom.xml" title="King的私人博客" type="application/atom+xml">
   
@@ -152,182 +151,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      SpringMVC
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/05/23/redis/" class="archive-article-date">
+  	<time datetime="2019-05-23T11:23:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-23</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/05/23/redis/">HashMap Redis</a>
     </h1>
   
 
-        
-        <a href="/2019/01/05/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-01-05T12:43:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="简述SpringMVC的流程"><a href="#简述SpringMVC的流程" class="headerlink" title="简述SpringMVC的流程"></a>简述SpringMVC的流程</h2><p>1.用户发送请求至前端控制器DispatcherServlet；<br>2.DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handle；<br>3.处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；<br>4.DispatcherServlet 调用 HandlerAdapter处理器适配器；<br>5.HandlerAdapter 经过适配调用 具体处理器(Handler，也叫后端控制器)；<br>6.Handler执行完成返回ModelAndView；<br>7.HandlerAdapter将Handler执行结果ModelAndView返回给DispatcherServlet；<br>8.DispatcherServlet将ModelAndView传给ViewResolver视图解析器进行解析；<br>9.ViewResolver解析后返回具体View；<br>10.DispatcherServlet对View进行渲染视图（即将模型数据填充至视图中）<br>11.DispatcherServlet响应用户。</p>
-<hr>
-<h2 id="SpringMVC解决中英文乱码的问题"><a href="#SpringMVC解决中英文乱码的问题" class="headerlink" title="SpringMVC解决中英文乱码的问题"></a>SpringMVC解决中英文乱码的问题</h2><p>(一)GET<br>在服务器server.xml的配置文件中添加URIEncoding=“UTF-8”之后,重启Tomcat即可<br>(二)POST<br>在web.xml中配置</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>charsetFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>forceEncoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>true<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-<hr>
-<h2 id="SpringMVC和struts2的区别"><a href="#SpringMVC和struts2的区别" class="headerlink" title="SpringMVC和struts2的区别"></a>SpringMVC和struts2的区别</h2><p>1)springmvc的入口是一个servlet即前端控制器（DispatchServlet），而struts2入口是一个filter过虑器（StrutsPrepareAndExecuteFilter）。<br>(2)springmvc是基于方法开发(一个url对应一个方法)，请求参数传递到方法的形参，可以设计为单例或多例(建议单例)，struts2是基于类开发，传递参数是通过类的属性，只能设计为多例。<br>(3)Struts采用值栈存储请求和响应的数据，通过OGNL存取数据，springmvc通过参数解析器是将request请求内容解析，并给方法形参赋值，将数据和视图封装成ModelAndView对象，最后又将ModelAndView中的模型数据通过reques域传输到页面。Jsp视图解析器默认使用jstl。</p>
-<hr>
-<h2 id="SpringMVC系统的分层"><a href="#SpringMVC系统的分层" class="headerlink" title="SpringMVC系统的分层"></a>SpringMVC系统的分层</h2><p>系统分为表现层（UI）：数据的展现，操作页面，请求转发。<br>业务层（服务层）：封装业务处理逻辑<br>持久层（数据访问层）：封装数据访问逻辑</p>
-<p>各层之间的关系：</p>
-<p>表示层通过接口调用业务层，业务层通过接口调用持久层，这样，当下一层发生变化改变，不影响上一层的数据。 MVC是一种表现层的架构</p>
-<hr>
-<h2 id="Spring的控制器是不是单例模式-如果是-有什么问题-该怎么解决"><a href="#Spring的控制器是不是单例模式-如果是-有什么问题-该怎么解决" class="headerlink" title="Spring的控制器是不是单例模式?如果是,有什么问题,该怎么解决?"></a>Spring的控制器是不是单例模式?如果是,有什么问题,该怎么解决?</h2><p>是单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的,解决方案是在控制器里面不能写字段。</p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢老板打赏<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/05/我的第一篇博客/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/04/15/hashMap源码分析/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HashMap 源码分析
-        
-      </div>
-    </a>
   
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -350,8 +216,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
